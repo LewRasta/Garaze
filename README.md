@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
+# Konfigurator Garażu
 
-## Project info
+Interaktywny konfigurator garażu umożliwiający projektowanie i wizualizację przestrzeni garażowej w 3D.
 
-**URL**: https://lovable.dev/projects/7284e0b4-2a5b-4fbd-a185-220f9b17a5e9
+## 🚗 Funkcje
 
-## How can I edit this code?
+- **Wizualizacja 3D**: Interaktywny widok garażu w czasie rzeczywistym
+- **Kontrola wymiarów**: Możliwość dostosowania szerokości, długości i wysokości garażu
+- **Widoki**: Przełączanie między widokiem ortograficznym a immersyjnym
+- **Responsywny design**: Działanie na urządzeniach mobilnych i desktopowych
+- **Eksport**: Możliwość eksportu projektu do PDF
 
-There are several ways of editing your application.
+## 🛠️ Technologie
 
-**Use Lovable**
+- **React 18** - Biblioteka UI
+- **TypeScript** - Typowanie statyczne
+- **Vite** - Szybki bundler
+- **Three.js** - Grafika 3D
+- **Tailwind CSS** - Stylowanie
+- **shadcn/ui** - Komponenty UI
+- **React Router** - Routing
+- **Electron** - Aplikacja desktopowa
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7284e0b4-2a5b-4fbd-a185-220f9b17a5e9) and start prompting.
+## 🚀 Instalacja i uruchomienie
 
-Changes made via Lovable will be committed automatically to this repo.
+### Wymagania
+- Node.js (wersja 18 lub nowsza)
+- npm lub yarn
 
-**Use your preferred IDE**
+### Instalacja
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Klonowanie repozytorium
+git clone https://github.com/lewrasta/KONFIGURATOR.git
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Przejście do katalogu projektu
+cd KONFIGURATOR
 
-Follow these steps:
+# Instalacja zależności
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Uruchomienie w trybie deweloperskim
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Dostępne skrypty
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Uruchomienie serwera deweloperskiego
+npm run dev
 
-**Use GitHub Codespaces**
+# Budowanie aplikacji
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Podgląd zbudowanej aplikacji
+npm run preview
 
-## What technologies are used for this project?
+# Uruchomienie aplikacji Electron
+npm run electron:dev
 
-This project is built with:
+# Budowanie aplikacji Electron
+npm run electron:build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Deploy na GitHub Pages
+npm run deploy
+```
 
-## How can I deploy this project?
+## 📱 Użycie
 
-Simply open [Lovable](https://lovable.dev/projects/7284e0b4-2a5b-4fbd-a185-220f9b17a5e9) and click on Share -> Publish.
+1. **Otwórz aplikację** w przeglądarce lub jako aplikację desktopową
+2. **Dostosuj wymiary** garażu za pomocą kontrolek
+3. **Przełącz widoki** między ortograficznym a immersyjnym
+4. **Eksportuj projekt** do PDF jeśli potrzebujesz
 
-## Can I connect a custom domain to my Lovable project?
+## 🌐 Demo
 
-Yes, you can!
+Aplikacja jest dostępna online pod adresem: [https://lewrasta.github.io/KONFIGURATOR/](https://lewrasta.github.io/KONFIGURATOR/)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📁 Struktura projektu
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```
+src/
+├── components/          # Komponenty React
+│   ├── GarageDesigner.tsx    # Główny komponent garażu
+│   ├── DimensionControls.tsx # Kontrolki wymiarów
+│   ├── ViewSelector.tsx      # Selektor widoków
+│   └── ui/                   # Komponenty UI (shadcn/ui)
+├── views/              # Komponenty widoków 3D
+│   ├── OrthographicView.tsx  # Widok ortograficzny
+│   └── ImmersiveView.tsx     # Widok immersyjny
+├── hooks/              # Custom hooks
+├── lib/                # Narzędzia i utilities
+└── pages/              # Strony aplikacji
+```
+
+## 🤝 Współpraca
+
+1. Fork repozytorium
+2. Utwórz branch dla nowej funkcji (`git checkout -b feature/AmazingFeature`)
+3. Commit zmiany (`git commit -m 'Add some AmazingFeature'`)
+4. Push do brancha (`git push origin feature/AmazingFeature`)
+5. Otwórz Pull Request
+
+## 📄 Licencja
+
+Ten projekt jest dostępny na licencji MIT. Zobacz plik `LICENSE` dla szczegółów.
+
+## 📞 Kontakt
+
+Jeśli masz pytania lub sugestie, otwórz issue w tym repozytorium.
+
+---
+
+**Autor**: lewrasta  
+**Wersja**: 1.0.0
