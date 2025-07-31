@@ -74,7 +74,7 @@ npm run deploy
 
 ## 🌐 Demo
 
-Aplikacja jest dostępna online pod adresem: [https://lewrasta.github.io/KONFIGURATOR/](https://lewrasta.github.io/KONFIGURATOR/)
+Aplikacja jest dostępna online pod adresem: [https://lewrasta.github.io/Garaze/](https://lewrasta.github.io/Garaze/)
 
 ## 📁 Struktura projektu
 

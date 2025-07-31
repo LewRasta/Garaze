@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lewrasta.github.io/KONFIGURATOR/",
+  "homepage": "https://lewrasta.github.io/Garaze/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
